@@ -1,6 +1,6 @@
-const fetch = require("node-fetch2");
+import fetch from "node-fetch";
 
-fetch("https://jsonplaceholder.typicode.com/users/1")
+fetch("https://jsonplaceholder.typicode.com/users")
     .then((respuesta) => {
         return respuesta.json()
     }).then((resp) => {
